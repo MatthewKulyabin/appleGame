@@ -37,7 +37,8 @@ module.exports = {
 		}),
 		new CopyPlugin({
 			patterns: [
-				{ from: 'favicon.ico' },
+				{ from: 'images/apple.png' },
+				{ from: 'images/trash.png' },
 			],
 		}),
 		new CleanWebpackPlugin(),
@@ -64,6 +65,17 @@ module.exports = {
 	          presets: ['@babel/preset-env'],
 	        },
 	      },
+	    },
+	    {
+	    	test: /\.(png|jpe?g|gif)$/i,
+	    	use: [
+	    		{
+	    			loader: 'file-loader',
+	    			options: {
+	    				name: '[path][name].[ext]',
+	    			},
+	    		},
+	    	],
 	    },
 		],
 	},
