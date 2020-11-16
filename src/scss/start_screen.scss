@@ -1,0 +1,63 @@
+.start_screen {
+	background: url('../images/jobs_start.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+.start_screen {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 1000px;
+	width: 1920px;
+	text-shadow: 2px 2px 4px white;
+
+	&__main {
+		margin-top: 30px;
+		margin-left: 40px;
+		margin-right: 40px;
+		&__game_name {
+			border: 1px solid black;
+			border-radius: .25rem;
+			width: 400px;
+			height: 100px;
+
+			text-align: center;
+			display: table-cell;
+      vertical-align: middle;
+		}
+
+		&__user_name {
+			#userName {
+				width: 400px;
+				height: 100px;
+				text-align: center;
+				border: 1px solid black;
+				border-radius: .25rem;
+				background: none;
+			}
+
+			::placeholder {
+				color: black;
+				text-shadow: 2px 2px 4px white;
+			}
+		}
+
+		&__btn_start .btn {
+			width: 400px;
+			height: 100px;
+			border: 1px solid black;
+			background: none;
+			text-shadow: 2px 2px 4px white;
+		}
+
+		div {
+			margin-top: 75px;
+		}
+	}
+
+	&__rules {
+		margin-top: 30px;
+		width: 250px;
+		text-align: justify;
+	}
+}

@@ -1,0 +1,76 @@
+body {
+	overflow: hidden;
+}
+
+.playing_screen {
+	background: url('../images/jobs.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+.playing_screen {
+	display: flex;
+	flex-direction: column;
+	height: 1000px;
+	width: 1920px;
+
+	&__header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 30px;
+
+		&__score {
+			width: 150px;
+			height: 50px;
+			border: 1px solid black;
+			border-radius: .25rem;
+			background: #6c757d;
+			text-align: center;
+			display: table;
+			color: white;
+		}
+
+		&__score div {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		&__gamer_name {
+			width: 300px;
+			height: 50px;
+			border: 1px solid black;
+			border-radius: .25rem;
+			text-align: center;
+			display: table;
+		}
+
+		&__gamer_name div {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 28px;
+		}
+
+		&__timer_pause {
+			width: 150px;
+			height: 50px;
+			border: 1px solid black;
+		}
+	}
+
+	&__game {
+		width: 1000px;
+		height: 85%;
+		position: relative;
+
+		&__trash {
+			background: url('../images/trash.png');
+			background-size: cover;
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			bottom: 0;
+		}
+	}
+}
