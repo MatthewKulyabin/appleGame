@@ -1,4 +1,3 @@
-import './modules.js';
 import '@core/core.js';
 
 import './scss/index.scss';

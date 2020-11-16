@@ -1,0 +1,48 @@
+.game_over {
+	background: url('../images/jobs_game_over.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+.game_over {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 1000px;
+	width: 1920px;
+
+	&__main {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		color: white;
+		text-shadow: 2px 2px 4px black;
+
+		&__gamer_name {
+			width: 500px;
+			height: 50px;
+			border: 1px solid black;
+			border-radius: .25rem;
+			text-align: center;
+			display: table;
+		}
+
+		&__gamer_name div {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 28px;	
+		}
+
+		&__statistics {
+			width: 500px;
+			height: 500px;
+			margin-top: 100px;
+		}
+	}
+
+	&__play_again {
+		margin-top: 30px;
+		width: 150px;
+		height: 50px;
+		border: 1px solid black;
+	}
+}
