@@ -4,24 +4,27 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	<title>Game Over</title>
+	<title>Apple Game</title>
 </head>
 <body>
 
 	<div id="app">
-		<div class="game_over">
-			<div></div>
-			<div class="game_over__main">
-				<div class="game_over__main__gamer_name">
+		<div class="playing_screen">
+			<div class="playing_screen__header">
+				<div class="playing_screen__header__score">
+					<div>0</div>
+				</div>
+				<div class="playing_screen__header__gamer_name">
 					<div>MrEnderNasha</div>
 				</div>
-				<div class="game_over__main__statistics">
-					Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Nam minima maiores officia quia id cumque numquam aliquam, amet, laboriosam voluptates at deserunt ipsum nobis consequuntur provident ea aperiam laudantium voluptas nihil ratione sunt reiciendis vel dolor fuga. Quidem, iste doloremque velit beatae magnam asperiores perspiciatis aliquam corrupti vel modi, illum ex. Nihil distinctio cum officiis ullam facilis nisi maxime aspernatur magni beatae cumque tempora quibusdam nulla rerum quisquam, architecto tenetur voluptatem? Nesciunt voluptates iusto maxime totam, hic. Quia necessitatibus, reiciendis facilis nesciunt voluptate dolorem consequuntur odio, temporibus sapiente eveniet est deserunt officia nihil iste odit ducimus totam cupiditate blanditiis numquam!
-				</div>
+				<button class="playing_screen__header__timer_pause btn btn-secondary">
+					00:00
+				</button>
 			</div>
-			<button class="game_over__play_again btn btn-dark">
-				Play Again
-			</button>
+			<div class="playing_screen__game">
+				<img src="./apple.png" alt="apple.png" width="100px" />
+				<div class="playing_screen__game__trash"></div>
+			</div>
 		</div>
 	</div>
 
